@@ -1,0 +1,95 @@
+:root{
+    --bg-color-1:rgba(103,93,236,1);
+    --bg-color-2:rgba(0,210,252,1);
+    --glass-color-1:rgba(255,255,255,0.6);
+    --glass-color-2:rgba(255,255,255,0.1);
+    --circle-color-1:rgba(255, 255, 255, 0.8);
+    --circle-color-2:rgba(255, 255, 255, 0.3);
+}
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right bottom, var(--bg-color-1), var(--bg-color-2));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .glass-effect{
+    width: 70%;
+    height: 70vh;
+    background: white;
+    background: linear-gradient(to right bottom, var(--glass-color-1), var(--glass-color-2)); 
+    border-radius: 2rem;
+    z-index: 5;
+    backdrop-filter: blur(200rem);
+}
+
+.circle1,
+.circle2,
+.circle3,
+.circle4,
+.circle5,
+.circle6
+{
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    var(--circle-color-1),
+    var(--circle-color-2)
+  );
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle1 {
+  height: 10rem;
+  width: 10rem;
+  top: 5%;
+  right: 15%;
+}
+.circle2 {
+    
+  height: 10rem;
+  width: 10rem;
+  bottom: 5%;
+  left: 10%;
+}
+
+.circle3 {
+    
+  height: 2rem;
+  width: 2rem;
+  bottom: 25%;
+  left: 40%;
+}
+
+.circle4 {
+    
+  height: 6rem;
+  width: 6rem;
+  bottom: 10%;
+  left: 80%;
+}
+
+.circle5 {
+    
+  height: 7rem;
+  width: 7rem;
+  bottom: 75%;
+  left: 60%;
+}
+
+.circle6 {
+    
+  height: 5rem;
+  width: 5rem;
+  bottom: 80%;
+  left: 20%;
+}
